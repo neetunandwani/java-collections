@@ -1,9 +1,13 @@
 import com.ttn.collections.CollectionMethods;
 import com.ttn.collections.Employee;
 import com.ttn.collections.Person;
+import com.ttn.collections.QueueExample;
 import com.ttn.collections.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class Application {
 
@@ -17,11 +21,13 @@ public class Application {
 //        TestEqualsOnEmployee equalsOnEmployee = new TestEqualsOnEmployee();
 //        equalsOnEmployee.test();
 
-        CollectionMethods collectionMethods = new CollectionMethods();
+//        CollectionMethods collectionMethods = new CollectionMethods();
 //        collectionMethods.test();
 //        collectionMethods.testWithIterator();
 //        collectionMethods.testComparable();
-        collectionMethods.testComparator();
+//        collectionMethods.testComparator();
+//        QueueExample queueExample = new QueueExample();
+//        queueExample.test();
 
     }
 
