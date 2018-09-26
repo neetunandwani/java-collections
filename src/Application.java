@@ -1,6 +1,4 @@
-import com.ttn.collections.TestEqualsOnEmployee;
-import com.ttn.collections.TestEqualsOnPerson;
-import com.ttn.collections.TestEqualsOnString;
+import com.ttn.collections.CollectionMethods;
 
 public class Application {
 
@@ -11,8 +9,11 @@ public class Application {
 //        TestEqualsOnPerson equalsOnPerson= new  TestEqualsOnPerson();
 //        equalsOnPerson.test();
 //
-        TestEqualsOnEmployee equalsOnEmployee = new TestEqualsOnEmployee();
-        equalsOnEmployee.test();
+//        TestEqualsOnEmployee equalsOnEmployee = new TestEqualsOnEmployee();
+//        equalsOnEmployee.test();
+
+        CollectionMethods collectionMethods = new CollectionMethods();
+        collectionMethods.test();
     }
 
 
