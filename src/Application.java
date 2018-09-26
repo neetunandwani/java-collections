@@ -1,4 +1,9 @@
 import com.ttn.collections.CollectionMethods;
+import com.ttn.collections.Employee;
+import com.ttn.collections.Person;
+import com.ttn.collections.Test;
+
+import java.util.ArrayList;
 
 public class Application {
 
@@ -13,7 +18,11 @@ public class Application {
 //        equalsOnEmployee.test();
 
         CollectionMethods collectionMethods = new CollectionMethods();
-        collectionMethods.test();
+//        collectionMethods.test();
+//        collectionMethods.testWithIterator();
+//        collectionMethods.testComparable();
+        collectionMethods.testComparator();
+
     }
 
 

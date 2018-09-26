@@ -2,7 +2,7 @@ package com.ttn.collections;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private int age;
 
     public Person(int age) {
@@ -35,5 +35,10 @@ public class Person {
         return "Person{" +
             "age=" + age +
             '}';
+    }
+
+    @Override
+    public int compareTo(Person person) {
+        return (this.age - person.age);
     }
 }

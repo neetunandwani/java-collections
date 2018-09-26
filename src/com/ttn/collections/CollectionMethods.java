@@ -1,8 +1,52 @@
 package com.ttn.collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
 
 public class CollectionMethods {
+
+    public void testComparator() {
+        List<Employee> people = new ArrayList<>();
+        people.add(new Employee("a", 12));
+        people.add(new Employee("b", 33));
+        people.add(new Employee("c", 4));
+        people.add(new Employee("d", 15));
+        people.add(new Employee("e", 60));
+        people.forEach(System.out::println);
+        System.out.println();
+        people.sort(new EmployeeComparator());
+        people.forEach(System.out::println);
+    }
+
+    public void testComparable() {
+        List<Person> people = new ArrayList<>();
+        people.add(new Person(12));
+        people.add(new Person(33));
+        people.add(new Person(4));
+        people.add(new Person(15));
+        people.add(new Person(60));
+        people.forEach(System.out::println);
+        System.out.println();
+        Collections.sort(people);
+        people.forEach(System.out::println);
+    }
+
+
+    public void testWithIterator() {
+        ArrayList<Person> people = new ArrayList<>();
+        people.add(new Person(2));
+        people.add(new Person(3));
+        people.add(new Person(4));
+        people.add(new Person(5));
+        people.add(new Person(6));
+        Iterator iterator = people.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+
     public void test() {
         ArrayList<Person> persons = new ArrayList<>();
         persons.add(new Person(4));
